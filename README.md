@@ -15,3 +15,7 @@
 1. Created a user model.
 2. Created a function that will handle user routes.
 3. Created a user response struct.
+
+## Fourth Commit
+
+1. Created a route to create a user.

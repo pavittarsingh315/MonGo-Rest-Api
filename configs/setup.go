@@ -16,25 +16,25 @@ func ConnectDb() *mongo.Client {
 		log.Fatal(err)
 	}
 
-	ctx, _ := context.WithTimeout(context.Background(), 10 * time.Second)
+	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
 	err = client.Connect(ctx)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// ping the database
-    err = client.Ping(ctx, nil)
-    if err != nil {
-        log.Fatal(err)
-    }
-    fmt.Println("Connected to MongoDB")
-    return client
+	err = client.Ping(ctx, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Connected to MongoDB")
+	return client
 }
 
 var DB *mongo.Client = ConnectDb()
 
 // getting database collections
 func GetCollection(client *mongo.Client, collectionName string) *mongo.Collection {
-    collection := client.Database("golangAPI").Collection(collectionName)
-    return collection
+	collection := client.Database("golangAPI").Collection(collectionName)
+	return collection
 }
