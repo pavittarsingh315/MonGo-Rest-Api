@@ -19,3 +19,7 @@
 ## Fourth Commit
 
 1. Created a route to create a user.
+
+## Fifth Commit
+
+1. Created routes to get, update, delete, and get all users.
