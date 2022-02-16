@@ -9,3 +9,9 @@
 1. Created a function to get the MongoURI from the env.
 2. Created a function to connect to the database.
 3. Created a function to get collections in the database.
+
+## Third Commit
+
+1. Created a user model.
+2. Created a function that will handle user routes.
+3. Created a user response struct.
